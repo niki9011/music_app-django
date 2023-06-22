@@ -56,5 +56,8 @@ class Album(models.Model):
         blank=False, null=False, validators=[CustomFloatPositiveValidator]
     )
 
+    class Meta:
+        ordering = ('id',)
+
 
 profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
