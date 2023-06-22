@@ -15,8 +15,10 @@
             <!-- Profile Info -->
             <h1>Username: {{ profile.username }}</h1>
             <h1>Email: {{ profile.email }}</h1>
-            <h1>Age: {{ profile.age }}</h1>
-            <h1>Albums: {{ album_count.count}}</h1>
+            {% if profil.age %}
+                <h1>Age: {{ profile.age }}</h1>
+            {% endif %}
+            <h1>Albums: {{ album_count}}</h1>
         </div>
 
         <div class="actionBtn">

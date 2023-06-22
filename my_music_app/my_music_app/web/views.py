@@ -95,7 +95,7 @@ def album_delete(request, id):
 
 
 def profile_details(request):
-    album_count = Album.objects.all()
+    album_count = Album.objects.count()
     context = {
         "profile": Profile.objects.first(),
         "album_count": album_count
