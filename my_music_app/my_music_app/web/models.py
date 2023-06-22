@@ -22,28 +22,36 @@ class Profile(models.Model):
 
 
 class Album(models.Model):
-    GENRE_CHOICES = [
-        ("pop", "Pop Music"),
-        ("jaz", "Jazz Music"),
-        ("rnb", "R & B Music"),
-        ("rock", "Rock Music"),
-        ("country", "Country Music"),
-        ("dance", "Dance Music"),
-        ("hiphop", "Hip Hop Music"),
-        ("other", "Other"),
-    ]
+    POP_MUSIC = "Pop Music"
+    JAZZ_MUSIC = "Jazz Music"
+    RNB_MUSIC = "R&B Music"
+    ROCK_MUSIC = "Rock Music"
+    COUNTRY_MUSIC = "Country Music"
+    DANCE_MUSIC = "Dance Music"
+    HIP_HOP_MUSIC = "Hip Hop Music"
+    OTHER = "Other"
+
+    GENRE_CHOICES = (
+        (POP_MUSIC, POP_MUSIC),
+        (JAZZ_MUSIC, JAZZ_MUSIC),
+        (RNB_MUSIC, RNB_MUSIC),
+        (ROCK_MUSIC, ROCK_MUSIC),
+        (COUNTRY_MUSIC, COUNTRY_MUSIC),
+        (DANCE_MUSIC, DANCE_MUSIC),
+        (HIP_HOP_MUSIC, HIP_HOP_MUSIC),
+        (OTHER, OTHER),)
 
     album_name = models.CharField(
-        blank=False, null=False, unique=True, max_length=30
+        blank=False, null=False, unique=True, max_length=30, verbose_name='Album Name'
     )
     artist = models.CharField(
         blank=False, null=False, max_length=30
     )
     genre = models.CharField(
-        blank=False, null=False, max_length=30, choices=GENRE_CHOICES
+        max_length=30, choices=GENRE_CHOICES, blank=False, null=False,
     )
     description = models.TextField(blank=True, null=True)
-    image_url = models.URLField(blank=True, null=True)
+    image_url = models.URLField(blank=True, null=True, verbose_name='Image URL')
     price = models.FloatField(
         blank=False, null=False, validators=[CustomFloatPositiveValidator]
     )
