@@ -1,1 +1,1 @@
-
+<img src="[https://media.giphy.com/media/p4NLw3I4U0idi/giphy.gif](https://github.com/niki9011/web_apps-django/blob/main/fruitipedia_exam/static/images/index.png)https://github.com/niki9011/web_apps-django/blob/main/fruitipedia_exam/static/images/index.png"/>
