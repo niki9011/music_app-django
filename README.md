@@ -1,1 +1,2 @@
-# my_music_app-django
+fruitipedia
+![img.png](readme_images/create.png)
