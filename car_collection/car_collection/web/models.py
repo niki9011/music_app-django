@@ -6,7 +6,7 @@ from django.db import models
 def validate_years(value):
     min_year = 1980
     max_year = 2049
-    if  not min_year <= value <= max_year:
+    if not min_year <= value <= max_year:
         raise exceptions.ValidationError("Year must be between 1980 and 2049")
 
 

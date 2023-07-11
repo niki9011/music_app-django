@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 
-from car_collection.web.forms import CreateProfileForm, CreateCarForm, EditCarForm, DeleteCarForm
+from car_collection.web.forms import CreateProfileForm, CreateCarForm, EditCarForm, DeleteCarForm, EditProfileForm, \
+    DeleteProfileForm
 from car_collection.web.models import Profile, Car
 
 
@@ -32,21 +33,59 @@ def profile_create(request):
             form.save()
             return redirect('catalog')
 
-    context = {"form": form,'profile': get_profile()}
+    context = {"form": form, 'profile': get_profile()}
 
     return render(request, 'profiles/profile-create.html', context)
 
 
 def profile_details(request):
-    return render(request, 'profiles/profile-details.html')
+    profile = get_profile().get()
+    cars_total_price = sum([c.price for c in Car.objects.all()])
+
+    context = {
+        'profile': profile,
+        'cars_total_price': cars_total_price,
+    }
+
+    return render(request, 'profiles/profile-details.html', context)
 
 
 def profile_edit(request):
-    return render(request, 'profiles/profile-edit.html')
+    profile = get_profile().get()
+
+    if request.method == 'GET':
+        form = EditProfileForm(instance=profile)
+    else:
+        form = EditProfileForm(request.POST, instance=profile)
+        if form.is_valid():
+            form.save()
+            return redirect('profile details')
+
+    context = {
+        'form': form,
+        'profile': profile,
+    }
+
+    return render(request, 'profiles/profile-edit.html', context)
 
 
 def profile_delete(request):
-    return render(request, 'profiles/profile-delete.html')
+    profile = get_profile().get()
+
+    if request.method == 'GET':
+        form = DeleteProfileForm(instance=profile)
+    else:
+        form = DeleteProfileForm(request.POST, instance=profile)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+
+    context = {
+        'form': form,
+        'profile': profile,
+    }
+
+    return render(request, 'profiles/profile-delete.html', context)
 
 
 def car_create(request):
