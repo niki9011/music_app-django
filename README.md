@@ -33,3 +33,16 @@ GamesPlay:
 <img src="https://github.com/niki9011/web_apps-django/blob/main/games_play/static/screenshots/Screenshot%20from%202023-08-17%2010-50-57.png"/>
 <img src="https://github.com/niki9011/web_apps-django/blob/main/games_play/static/screenshots/Screenshot%20from%202023-08-17%2010-51-03.png"/>
 <img src="https://github.com/niki9011/web_apps-django/blob/main/games_play/static/screenshots/Screenshot%20from%202023-08-17%2010-51-20.png"/>
+
+Plants:
+
+<img src="https://github.com/niki9011/web_apps-django/blob/main/plants/static/screenshots/img_1.png"/
+<img src="https://github.com/niki9011/web_apps-django/blob/main/plants/static/screenshots/img_2.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/plants/static/screenshots/img_5.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/plants/static/screenshots/img_6.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/plants/static/screenshots/img_7.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/plants/static/screenshots/img_8.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/plants/static/screenshots/img_10.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/plants/static/screenshots/img_12.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/plants/static/screenshots/img_13.png"/>
+
