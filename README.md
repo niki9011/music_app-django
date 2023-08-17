@@ -24,3 +24,12 @@ Music_app:
 <img src="https://github.com/niki9011/web_apps-django/blob/main/music_app/static/images/all_albums.png"/>
 <img src="https://github.com/niki9011/web_apps-django/blob/main/music_app/static/images/profile_details4.png"/>
 <img src="https://github.com/niki9011/web_apps-django/blob/main/music_app/static/images/details%0A.png"/>
+
+
+GamesPlay:
+
+<img src="https://github.com/niki9011/web_apps-django/blob/main/games_play/static/screenshots/Screenshot%20from%202023-08-17%2010-36-01.png"/>
+<img src="hhttps://github.com/niki9011/web_apps-django/blob/main/games_play/static/screenshots/Screenshot%20from%202023-08-17%2010-36-07.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/games_play/static/screenshots/Screenshot%20from%202023-08-17%2010-50-57.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/games_play/static/screenshots/Screenshot%20from%202023-08-17%2010-51-03.png"/>
+<img src="https://github.com/niki9011/web_apps-django/blob/main/games_play/static/screenshots/Screenshot%20from%202023-08-17%2010-51-20.png"/>
